@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="container"></div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+        <script>
+
+                $container
+                    .text("Hello World!")
+                    .css("color", "red")
+                    .on("mouseenter", function (e) {
+                        console.log("moused over!");
+                    })
+                    .append($newDiv);
+                $("li").each(function (i, el) {
+                    console.log("Day " + i + ": " + $(el).text());
+                });
+            });
+        </script>
+    </body>
+</html>
